@@ -1,3 +1,6 @@
+React Native Docs
+====
+
 - [Getting Started](#getting-started)
 - [Tutorial](#tutorial)
 - [Props](#props)
@@ -10,10 +13,6 @@
 - [Using List Views](#using-list-views)
 - [Networking](#networking)
 - [More Resources](#more-resources)
-
-
-React Native Docs
-====
 
 ## Getting Started
 

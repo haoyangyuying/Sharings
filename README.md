@@ -13,7 +13,7 @@ React Native Docs by Hao
 - have Node installed
 - install:  `npm install -g create-react-native-app`
 - create a new project: `create-react-native-app AwesomeProject`
-- install [Expo](www.expo.io), scan QR code to open you project
+- install [Expo](https://www.expo.io), scan QR code to open you project
 - open `App.js`, then make changes
 - run you app: `npm run android` or `npm run ios`
 - integrate react app to your project

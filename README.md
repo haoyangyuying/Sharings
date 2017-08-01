@@ -1,12 +1,19 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
----
-React Native Docs by Hao
-====
+Getting Started
+Tutorial
+Props
+State
+Style
+Height and Width
+Layout with Flexbox
+Handling Text Input
+Using a ScrollView
+Using List Views
+Networking
+More Resources
 
+
+React Native Docs
+====
 
 ## Getting Started
 

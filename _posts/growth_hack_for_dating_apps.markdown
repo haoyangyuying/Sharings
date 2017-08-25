@@ -1,5 +1,7 @@
 ## [マッチングアプリのグロース特集](https://repro.connpass.com/event/62019)
 
+[Github](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/growth_hack_for_dating_apps.markdown)
+
 ### 感想まとめ
 
 - 出会い系のサービスは、競争が激しい

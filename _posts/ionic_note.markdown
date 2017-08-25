@@ -1,4 +1,6 @@
-# [HTML5でアプリを作るIonic 2 + ミートアップ東京](https://ionic-jp.connpass.com/event/61051/)
+# [html5でアプリを作るionic 2 + ミートアップ東京](https://ionic-jp.connpass.com/event/61051/)
+
+[Github](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/ionic_note.markdown)
 
 ## Webの未来を切り開くIonic Framework(仮):monkey:
 
@@ -163,4 +165,3 @@
 
 - prototypeを作るなら,Hybridをつくるならionic
 - 参考リソース：[joshmorony](https://www.joshmorony.com/)、[cordovaプラグイン](https://cordova.apache.org/docs/ja/latest/guide/hybrid/plugins/)
-

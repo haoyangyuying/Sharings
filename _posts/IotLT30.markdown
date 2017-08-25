@@ -1,5 +1,6 @@
 # [IoT縛りの勉強会! IoTLT vol.30 @ DMM](https://iotlt.connpass.com/event/58227/)
 
+[Github](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/IotLT30.markdown)
 ## 感想：
 - 完成度が高い、(いい意味で)変人がいった！！
 - アイディアが面白いし、雰囲気が良かった

@@ -7,4 +7,4 @@ Docs
 - [IoTLT30](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/IotLT30.markdown)
 - [rails_service_seminar](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/rails_service_seminar.markdown)
 - [IoTLT31](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/IotLT31.markdown)
-- [python_serminar](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/python-seminar.markdown)
+- [python_serminar](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/python_seminar.markdown)

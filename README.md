@@ -9,3 +9,4 @@ Docs
 - [IoTLT31](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/IotLT31.markdown)
 - [python_serminar](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/python_seminar.markdown)
 - [VENTURE ENGINEER MEETUP](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/venture_engineer_meetup.markdown)
+- [html5_conference_2017](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/html5_conference_2017.markdown)

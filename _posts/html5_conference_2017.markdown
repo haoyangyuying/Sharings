@@ -1,0 +1,178 @@
+
+# [HTML5 Conference 2017](https://html5j.connpass.com/event/64992/)
+---
+## [Deep dive into typeScript](https://t.co/DQOGzM5eyj)
+
+- @brn
+- ALtSJの一種
+- 型が大事
+- しかし、RunTimeのerrorあり
+- 外部のmodule
+  - 3rdPart製の型定義ファイルを管理している
+  - Is DefinitelyTyped Enough?
+    - 型の集約.3rdParty
+    - 自分がlibraryをつくれる
+- Babelで[bable-plugin-transform-typescript](https://www.npmjs.com/package/babel-plugin-transform-typescript)がある
+- Flowtypeが流行り理由? microsoftが後ろにいる
+- structural subtyping
+  - 型の整合性がinterfaceに定義できる
+  - why: 宣言が面倒
+  - tsでは、型の宣言をする必要がない
+  - Namespaces: 型と変数名両方使える
+- Generics: 総称型
+  - function fun<T extend something>
+- type alias, insersaction type, [union type](http://qiita.com/kuy/items/f342fbd1737f557cf42a)
+- string literal types
+- 型を凝りこみ：isString(x: any)
+- [never型](https://basarat.gitbooks.io/typescript/docs/types/never.html)
+- decrived[] => Base[]
+- [cunstom Transformer](http://qiita.com/kimamula/items/010d1fa8fd9a9d9ca207)
+- auto complete でimportする
+- roadmap:
+  - 複数のtsconfigを使えるようになる
+  - 可変長型 (ts:…T)
+  - 型ファイル宣言の集約
+  - 新しいES Decoratorのサポート
+  - import宣言以外での型推論
+  - IDEサポート
+
+---
+## the first step to angular
+
+- 特徴：web, standards, simple, easy, fast, full-stack, powerd by TS;
+- ECMAScript 2015+, ES Modules, Web Animations API, official Web Components, ES proposal: Decorators, Observables, Zones
+- event handling: (event)
+- angular CLI
+- *high performance*: smart change detector / smart renderer
+- *official packages*: @angular/core...  service-worker(offlineで処理する)
+- *typescript*: static type, decorators type-base dependency
+- *static types*: benefit of type(API doc), compiler check(compilation is the easiest test), auto-completions(language services helps your editor)
+- @Decorators()  
+  - type-based DI
+- *language service*: componentのなかで自動保管される、auto-complete
+- angular Basic API
+  - @component()
+    - selector, template, styles
+  - @input()/ @output()
+  - @Directive()
+    - extend elements
+  - @Pipe()
+    - data transformer
+  - @Ngmodule()   libraries
+    - angular architecture
+    - たくさんのmoduleをimportして、自分のappをつくる
+  - platforms: platformにmoduleをわたして、appを実行する
+- angular is a platform
+  - Framework to platform
+  - render view
+    - Data modle → view viewでするものをcomponentで提供する
+  - Transit view
+    - pathとrouteをmappingしている
+    - url-component mapping guard & resolve nesting lazy-loading
+    - http service
+      - observable<T> 必要なときでーたをアクセス可能
+    - http
+      - http interceptor
+      - http progress
+    - additoinal features
+      - Animations
+      - server-side rendering
+      - materialデザイン
+      - angular language service
+      - angular.io as a doc
+      - angular.io as an app: progress web appなどもできる
+- まとめ：read angular.io, user angular CLI
+  - major 6 monthsに上がる, 来月がバージョン6
+  - release noteを読む
+  - slack: ng-japanで質問
+
+---
+## web技術でネイティブアプリを開発する話
+
+- speaker: @massie, masahirotanaka
+- 各種フレームワークやツール
+- クロスプラットフォーム：異なるOS向けのビルドとパッケージ
+- ユーザーインターフェースの構築
+  - electronを使用
+    - chromium をwebview
+    - メインプロセス IPCプロセス通信 レンダラープロセス
+    - UIの構築
+  - react desktop
+  - NW.js(Node Webkit), 印刷機能、chromeとの親和性が高い
+- モバイルアプリ開発の難しさ
+  - cpuやgpuの性能が低い
+    - 性能比較 sunspider benchmark
+  - 厳格に規定したUI
+    - 画面レイアウト
+    - ハードウェアボタンの有無、キーボードの違う、標準UIのデザイン
+  - BtoC, BtoBの仕様が違う
+   - B2B：安いコストで多OS展開、めんてなんすもできるだけ
+   - B2C: app storeでtop 10を狙うとにかく最高の性能
+- cordovaを使いましょう: webviewがあり
+- webview ↔ nativebrige ↔ nativeview
+- ネイティブ連携：cordova pluginとの連携；objective-C やJavaで記述；javascriptからネイティブへのブリ
+- Cordova CLI
+- webviewの選択肢
+- ネイティブプラグインコマンド
+  - onsen UI
+- React Native: webviewを使っていない
+  - ReactJSとの違い
+  - native module: npmがreact nativeに統合されネイティブパッケージ
+- パフォーマンス考察：レンダリングコスト、スレッドモデルの違い
+- htmlとCssの高速化
+- WEEXでは Vue.js    alibaba
+- NativeScript: NativeのUIKitやAndroid APIをJSで直接呼び出す
+- ネイティブAPIのアクセス方法
+
+---
+## Web技術とブラウザ今知っておくべきウェブの最新動向
+
+- @dynamitter
+- [slides](slideshare.net/dynamic)
+- html5修正提案（標準化されているので）
+- 今年、firefoxとchromeがapi数ではリードを更に広げていっている
+- edgeもこんなにサポートしてくる
+  - WebRTCとか、Brotliとか
+- サービスへの導入が広がるweb技術
+  - アプリケーション(PWA) service workers, push, payment request api...
+  - マルチメディア系API: WebRTC...
+- 開発ツールの新機能はビデオで学ぼう
+  - chrome, firefox, edge
+- Origin Trial(Chrome)
+  - ユーザーが設定しなくても使える
+- chrome update: 56 web bluetooth APIに対応、CSS position: sticky
+  - css grid layoutに対応
+  - media session api再生中のメディア情報をロック画面に表示
+  - chrome 58: indexedDB 2.0サポート完了、フル画面アプリ, css display: flow-root
+  - chrome 59: headless Browsing サポート, notificationの表示がmacOS標準UIに, image Capture API
+  - chrome 60: Paint timing API, CSS font-display, WebAssembly正式対応
+  - chrome 61: javascripe module のサポート, payment request API, webshare API, WebUSB
+- edge
+  - sonar linting cool
+  - sonarの結果　html5conferenceサイト
+  - ptyment request API, Brotli CSS Custom Properties
+  - EdgeHtml16 Service Wrokerに対応、WebVR, WebRtc...
+- firefox 50
+- safari 10.1
+- pointer lock, gamepad, ゲーム対応など
+- nodule非対応のworkaround
+- safari 11 webasembly サポート、resouce timing2, drag and drop, variable font
+
+---
+## [ウェブのための次世代決済法](https://docs.google.com/presentation/d/e/2PACX-1vS6TvUO3iMcepLt4EtvaQhwhqzWrlvghHiTpUvzbgM-T4pd4oYCJ3c1FSAe9MPN1EgmoiMpPthJqghQ/pub?start=false&loop=false&delayms=3000&slide=id.g1e8459e4bc_0_4)
+  - agektmr
+  - google developer advocate
+  - なぜ → 従来の支払い方法から、クレジットカードを入れた
+- web payments
+  - シンプル、セキュア、よりよいUI/UX
+  - payment request apiでformをかえただけ、処理しない
+  - browser compatibilites for Android実装完
+- payment methods
+  - psp 決済代行サービス,大半の企業がこれを使っている
+- google cards on fileで[pay with google]で使える
+- interledger, basic-credit-transfer...
+- まとめ
+  - より良いUX
+  - よりシンプル
+  - tokenizationでセキュア
+  - あたらしいペイメントエコシステム

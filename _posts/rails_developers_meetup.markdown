@@ -1,0 +1,97 @@
+## [Rails Developers Meetup #6](https://techplay.jp/event/631427)
+
+- Railsエンジニアの交換型インターンシップについて
+  - kowabana.jp, Boughtit.jp
+  - 無料
+  - 学習週
+    - プログラミングスクール
+    - 全く素人向けのカリキュラム
+    - 平均3ヶ月で完了できる
+    - slackで成果
+    - 日報とそのレビューを練習する
+    - wikiやQ&Aもあり
+  - 作業週
+    - ルーチンワークを用意
+    - ruby/railsをさらるサービス
+    - github issueを看板風で表示する
+    - リモートとローカル
+    - シニアバイトがいる
+    - アルバイトとしての成果、スクールとしての成果
+    - Eラーニングサービス
+    - メリット：就職先がある
+    - リモート：モチベーションを持たない, メッセージを送り続ける
+      - 所属感がない
+    - アドバイス：社会人採用、たくさん育つ、OSSコミュニティに参加など
+
+- Railsコントリビューション
+  - @fxn xavier noria
+  - oss: fxn/rails-contributors
+  - ちゃんとした書き方がわからない
+    - コミットログ2,3ヶ月を読む
+  - railsが期待通り動かない
+    - issueを作る
+  - 機能追加したい時
+    - /rails/railsのみを対象
+    - issue, mailing list
+      - バグ管理、バグ報告(issue template), 再現手順、 rails_bug_templateを使用
+      - masterの rails4.2 もしぬなので、消えるかもしれない
+      - pull requestを出す前に、同じようなPRが止まる、そのPRの作者にpingしてみる
+      - その機能本当にrails本体にいる?
+      - PR出すに気をつけること：format(summaryを書く)
+      - PRを出すに性能チェックにbenchmark結果を貼る
+      - レビュアーの負担を減らすよう、必要な情報を全て渡す
+      - public apiの挙動を変えない
+      - 公式のドミュメントをみる
+      - 新しいバージョンを触る
+      - 適当なissueをピックアップしてバッグ
+      - oss-gate コミュニティ
+
+- Railsで作るファイルロードアップ2017
+  - brides up
+  - ruby on rails 5.0 ruby 2.3
+  - aws, auora
+  - github, esa(document realese note management), slack
+  - 画像アップロード機能移行
+    - activestorage
+    - スマホ：容量、gemを使うことにより起こること
+    - ファイルのvalidate, まつわるモデルのvalidate, 公開非公開(security)
+    - resizeするタイミング or imageFlux利用
+    - 画像ファイルの置く場所
+      - cloud storage
+    - UIから、uploadしながら編集可能
+    - 気になったポイント：非同期なところ
+    - rails 5.1 フォームを使う、form_with, headless broswer
+    - 入力　→　確認(無くす可能性も)　→　完了
+    - Validationに form objectを使う
+    - S3に画像アップロード、S3について知る必要がある、テスト
+    - ダイレクトアップロード(S3)
+    - 複数のファイルをアップロード、jQuery
+    - ECMASscript6やファイルAPIなど
+  - rails cloudstorageが大事 , user experienceから考えると, rails 以外の技術が必要、どういうふうににgemを選別するのか
+
+
+- How, Why, What がわからないコードの調べ方
+  - git blame /hoge/ number (+ 20行)
+  - vcs-ann w3m でinstall
+  - tig blame
+  - logger.debugを入れる
+  - kernel.#caller
+  - logger.tagged 'method_name'
+
+- How to improve OSS Rails application
+  - OSS rails貢献する
+  - cloud native ambassador kubernetes, prometheus
+  - rails engineer
+  - hacktoberfest
+  - gitlabhq
+  - devops toolchain ソフトウェア
+  - gitlabとの関わり、2014大規模障害, gitlab CI構築
+  - 2015, ドキュメントが必要、, gitla.jp
+  - rails アプリはNo.2, 1750以上の今鳥ビュアー、rails oss-gate
+  - contributing.mad
+  - tech for gitlab:
+  - rspec 50, with
+  - build, 60分
+  - railsスペシャリスト、 gitlabをご検討ください
+  - oss貢献したいなら、
+  - データ分析基盤

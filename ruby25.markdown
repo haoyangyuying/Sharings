@@ -1,0 +1,173 @@
+- 感想
+  - 25歳のRubyが日本の職人精神の成果
+  - 長く生きていけるプログラミング言語Rubyは、日本人や日本文化との一貫性と穏やかな変化が感じられる
+  - 職人Matz: 家族大切、優しい、可愛がられる、おしゃべり、謙遜...
+  - Rubyは、人間のアイデアを簡単に、直感的に具現化する、楽しく開発できるツール
+
+- 開場
+  - 様々なプロダクションやフレームワークに影響し続けている
+
+- Rubyの1/4世紀(高橋　征義)
+  - 25開発されていて、メンテナンスしていることが素晴らしい
+  - 自己紹介：ruby歴は20年、rubyの本棚を自慢する、コミッターではない
+  - タイトルは、UNIXの1/4世紀を真似
+  - 年表URL：github.com/takahashim/ruby-history
+  - Rubyの4時期：、認知(98~02年)、転換、発展、普及
+    - 誕生(93~97)
+      - 初めて公開された場所はNetNews
+    - 認知(98~02年)
+      - 最初のRubyの本：オブジェクト指向スクリプト言語 Ruby
+    - 転換
+      - ruby on railsの開始
+    - 発展
+      - rubyライブラリの変化
+      - rubygems採用公式的なパッケージ
+      - gemcutterがrubygems.orgに変名gem配信
+      - bundler 1.0 2008
+    - 普及
+      - 現在
+  - 感想
+    - リーダーシップないのリーダーシップ(by Matz from Elastic Leadership 38章 OSS開発のリーダーシップ)
+    - rubyが支える私達の開発、個人が支えるruby, 組織が支える個人
+      - 組織の役割(committers、 rubykaigi, ruby world conference, ruby girlsなど)：個人がfull-time開発できる、 開発助成金、安定版保守、インフラを提供(svn.ruby-lang.org, cache.ruby-lang.orgなどを提供)、コンテスト：ruby prize, hukuoka ruby 大賞、 ruby heroes, rubykaja、標準化する
+    - 草の根、個人の方々が頑張った結果
+  - 事務連絡：RubyKaigi2018は自慢大会にしたい、プロダクトについてあなたが語って欲しい
+
+- Ruby after 25 years(まつもと　ゆきひろ)
+  - Slide下のカメとウサギが面白い(https://rabbit-shocker.org/ja/)
+  - ソフトウェアの誕生：rubyはいつからrubyか; 公開日は1995-12-21だけど,開発始める日は1993-02-24
+  - 「名前重要」: Rubyという名前、Perlに倣っている、最初はRuby or coralだが、誕生石や活字の大きさで、Perlの次としてふさわしい名前
+  - 位置づけ：pythonの隣で、或いは斜め後ろの感じ
+  - Rubyが生きてきた理由
+    - 環境変化はおどろくほど小さい
+      - CPUはx86 いまはinter
+      - cpuの根本は変わらない
+      - news-os→sunos
+    - Rubyの発展は安定性に救われている
+      - Webのスケーラビリティが高い
+      - マルチコア
+      - 分散・並列処理
+      - デバイスプログラミング
+      - スケーラブル：データ規模、コード規模、チーム規模
+      - マルチコア、マルチノード、マルチデータセンター
+  - 未来のRuby: コアがあまり変わらない、チューリング完全性
+  - 言語の進化の方向：生産性を向上させる、より早く、より速く、より安く、より高い保守性
+  - 開発の最適人数：ピザ２枚の法則(6,7人)
+  - ruby3×3のスローガンで盛り上がった
+  - Ruby3(2020年まで)
+    - 高速(MJITというプロジェクト)
+      - ruby2.6はMJIT付き
+      - 静的型推論
+      - テディベア・プログラミング、テディベアつきコンパイラかも、例えば、「なんでerrorだろう」っていったらgoogle homeが回答してくれるか、suggestion(もしかして。。。)してくれる (笑)
+    - 分散処理(GUILDというプロジェクト)
+      - GPGPU, FPGA、big.LITTLE
+      - 大規模分散環境対応(ムーアの法則)、分散処理の抽象化
+      - Guildのその先　ソフトウェア予想：XaSS, FaaS, Amazon Lambda
+      - 1コアでの性能向上限界から、マルチコア、マルチノードに変化し、スケーラブルソフトウェアができること
+    - データ解析(STEEPというプロジェクト)
+     - プロファイル型解析
+  - 原則：連続的な変化を続く、巨大なギャップを避ける
+  - 対応すべき：開発効率と保守性の向上(IDE、rubocopなど)、均質計算環境対応(複数のDCや環境に跨る開発に適応)
+  - 感想：
+    - テクノロジー環境があまり変わっていないが、文化が変わるので、心理的壁を壊す必要がある、コンピュータが楽しいと思うようにしたい
+    - 思考の明確化、思考のツールがRuby, 人間のためのRuby、私達のRuby, 人間とともに育つRuby
+    - プログラミング言語サバイバル
+
+
+- Ruby on Ruby on Rails(松田　明)
+  - Railsは2004年に開発を始め、最初はプロムラマー一人か2人
+  - Rails特徴：basecampという現実のスタートアッププロダクトから切り出されたもの
+  - 5000人コントリビューター、古くならない、最新webフレームワーくであり
+  - RoRのお陰で、rubyでweb開発ができた、Ruby after Rails 知られている
+  - Rails keywords: CoC, 密結合、ジェネレーター、TDD、AJAX、Rest再発見、 alt JS, assetのunification
+  - 儲かるビジネスができる、昼間からrubyを決めながらお金までもらえる状況(笑)
+  - DHHが引いたレールに乗せてみんなのもとにRuby(Railsがインフラ)
+  - バージョン6.0開発中、最新のフレームワークである
+  - 一言：Rails楽しい
+  - 事務連絡：rubykaigi 2018開催
+
+- RubyとInfrastructure as Code(近藤 宇智朗)
+  - Infrastructure as Code: サーバインフラ、サーバ初期化、サーバのクラスタリング、バージョン管理
+  - configurationのイメージ化ができる
+  - RubyはDSLを作るのに向いている
+  - DSLを採用したプロダクト：Chef/Itamae, vagrant ridgepole, serverspec
+  - インフラエンジニアの生産性を上げる
+  - The Times(buzz word)
+    - マイクロサービス
+    - コンテナ化
+    - サーバレス(mrubyの可能性がある)
+      - 機能単位で複数の小さなマイクロサービスに分かつし、一つの役割に専念させる
+      - cloud native computing foundation
+      - projects on cncf
+      - cloud native: 負荷を素早く検知して、スケールアウトするフック機能
+  - 時代はマイクロサービス・コンテナrubyのちから出その分野に
+
+- mrubyって今、こんな風に使われている
+  - web系の人もIoTみたいな組み込み開発できたらよくないですかという質問
+  - 2012年 オープンソースとして公開
+  - mrubyのmは軽量化： RAM 200KB
+  - 書きやすい、使いやすい、mruby-cliも使える
+  - mruby用仮想マシン、拡張はmruby版Gems
+  - 例：社内設置型アルコール検査機
+  - これからのmruby: Ruby 2.0にキャッチアップ
+
+- Data processing and ruby in the world
+  - collect
+    - fluented, logstash
+    - 他：sonots/cumo mrkn/mxnet.rb red-data-tools/red-chainer paironair/xgboost-ruby
+  - summarize
+  - analyze
+    - OSS related with Ruby: fluentd, embulk
+    - Red Data Tools: extpp, red-dataset
+    - ruby/Numo, BioRuby, SciRuby
+    - Treature Data, Repro, FlyData
+  - visualize
+    - OSSはない
+
+- 対談
+ - 引退後の話
+   - 今からデータを集めて、人工知能でMatzを再現
+   - 問題点：名前がだめなところが多いかも(笑)
+ - サブシステム改善とかは無いです
+ - 開発組織の話
+   - 正規表現　言語にメソッドは　マツモト　一貫性がある　policyが
+   - 原則的に一貫性
+ - 近い将来の話
+   - 近い将来：ruby3 2の連続で3になる、Ruby1.9, Ruby2.0, ..., Ruby3
+   - ものが全部Main Lineで開発する
+   - ruby 3.0コミュニティの分断が大きいので、大きいgapがないように
+   - labelモデルを採用する、ある時点でラベルをつける
+   - 根本てきなところを直せないから,　諦めるしか無い
+   - 互換性はないと、先にnoticeを出す
+   - 非互換性が少ない方がいい
+   - gitコンパイラは先にRuby2.6で出したい
+   - 処理するメモリが減る
+ - 動的、静的について
+   - 動くプログラムに型を書くと、dryじゃない、コードに型書きたくない
+   - 静的銀後だと、参考情報が多と、ツールがサポートできる
+ - 新syntaxについて
+   - 新しいsyntax追加は難しい
+ - 新機能について
+   - namespace,packageを真剣に考える、javascriptみたいにfile単位でのnamespaceを作ってもいいかも
+ - プログラミング言語について
+   - DSLに使いやすくにしたい
+   - 人間が何かしたいとき、そのままコンピュータと交流できる、言語はツールで、人間を支援する
+ - Ruby と Railsについて
+   -  programming language は下のlayer、railsの変わりが早いが、ruby保守的に考える必要
+ - Active Supportの話ついて
+   - active supportの中のmonkey patchの問題
+   - もしissueを上げたら、本家に取り込む可能
+   - active supportにあるmethodがかどうかがわかるものがあったらいいね
+ - Rspecについて
+   - rspec 英語ぽくする
+ - 教育の話
+   - Ruby教育:　大学の普及で努力が必要
+   - pythonとrubyが似ているので、お互いに勉強が簡単にできる
+   - 一つのライブラリで変わる可能性がある
+ - 人生設計について
+   - 毎日歩く、健康
+ - もう一つやってみることについて
+   - Rubyはlifeworkで, データベースも作りたい
+   - データベースをもとにファイルシステム(Redis)
+ - 開場質問
+   - keyword argumentを破壊的に変化を慎重に考える

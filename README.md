@@ -12,3 +12,4 @@ Docs
 - [html5_conference_2017](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/html5_conference_2017.markdown)
 - [Shibuya_ruby](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/shibuya_ruby.markdown)
 - [rails_developers_meetup](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/rails_developers_meetup.markdown)
+- [Ruby25](https://github.com/yanghaoyuying/all_docs/blob/master/_posts/ruby25.markdown)
